@@ -1,223 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webdevelopment Professional Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header -->
-   >          
-        <!--  navigation -->
-    <header>
-        <a href="index.html">
-            <img src="images/03e3aa07-4c87-4920-8e33-bb768cf58c53.jpg" alt="Matthew Boisse Image">
+  <header>
+    <div class="logo">
+        <img src="img/devjane.png" alt="">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Introduction -->
+<section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Matthew Boisse</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Back-End Website Developer</p>
+    <img src="images/03e3aa07-4c87-4920-8e33-bb768cf58c53.jpg" alt="picture of Matthew Boisse" class="intro__img">
+</section>
+
+
+<!-- My services -->
+<section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Design + Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> <!-- / service -->
+        
+        <div class="service">
+            <h3>E-Commerce</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> <!-- / service -->
+        
+        <div class="service">
+            <h3>WordPress</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> <!-- / service -->
+    </div> <!-- / services -->
+    
+    <a href="#work" class="btn">My Work</a>
+</section>
+
+
+<!-- About me -->
+<section class="about-me" id="about">
+   <h2 class="section__title section__title--about">Who I am</h2>
+   <p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
+   
+   <div class="about-me__body">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   </div>
+   
+   <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
+</section>
+
+<!-- My Work -->
+<section class="my-work" id="work">
+    <h2 class="section__title section__title--work">My work</h2>
+    <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+    
+    <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
         </a>
-        <nav>
-          <!-- Unordered list element -->
-          <ul>
-            <!-- List item element -->
-            <li>
-              <!--  Anchor element -->
-              <a href="#what we-do">What we do</a>
-            </li>
-            <li>
-              <a href="#what you-do">What you do</a>
-            </li>
-            <li>
-              <a href="#your-trainers">Your Trainers</a>
-            </li>
-            <li>
-              <a href="#reach-out">Reach Out</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-  
-      <!-- hero/jumbotron -->
-      <section class="hero">
-        <div class="hero-form">
-          <h3>Get Started Today</h3>
-          <p>
-            Fill out this form and one of our trainers will schedule a consult
-          </p>
-          <!-- Add form element -->
-          <form>
-            <label for="name">Enter full name:</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              name="name"
-              id="name"
-              class="form-input"
-            />
-            <label for="email">Enter email address:</label>
-            <input
-              type="email"
-              placeholder="Email Address"
-              name="email"
-              id="email"
-              class="form-input"
-            />
-            <label for="phone">Enter a telephone number</label>
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              name="phone"
-              id="phone"
-              class="form-input"
-            />
-            <p>
-              Have you worked out with a trainer before?
-              <input type="radio" name="trainer-confirm" id="trainer-yes" />
-              <label for="trainer-yes">Yes</label>
-              <input type="radio" name="trainer-confirm" id="trainer-no" />
-              <label for="trainer-no">No</label>
-            </p>
-            <p>
-              <label for="checkbox">
-                I acknowledge that I am at least 18 years of age.
-              </label>
-              <input type="checkbox" name="age-confirm " id="checkbox" />
-            </p>
-            <button type="submit">Get running!</button>
-          </form>
-        </div>
-      </section>
-  
-      <!-- "What we do section" -->
-      <section id="what-we-do" class="intro">
-        <h2 class="section-title primary-border">What We Do</h2>
-        <p>
-          butcher selfies chambray shabby chic gentrify readymade yr Echo Park
-          XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you
-          probably haven't heard of them single-origin coffee Vice fanny pack
-          fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson
-          Thundercats viral bitters flannel meggings narwhal Marfa Schlitz
-          sustainable Intelligentsia umami deep v craft
-        </p>
-      </section>
-  
-      <!-- "What you do section" -->
-      <section id="what-you-do" class="steps">
-        <h2 class="section-title secondary-border">What You Do</h2>
-  
-        <div>
-          <!-- insert this image element -->
-          <img src="images/step-1.svg" alt="" />
-          <h3>Step 1:<span> Fill Out the Form Above.</span></h3>
-          <p>You're already here, so why not?</p>
-        </div>
-  
-        <div>
-          <img src="images/step-2.svg" alt="" />
-          <h3>Step 2:<span>Consult with One of Our Trainers.</span></h3>
-          <p>Are you here to build muscle, lose weight, or just feel good?</p>
-        </div>
-  
-        <div>
-          <img src="images/step-3.svg" alt="" />
-          <h3>Step 3:<span>Get Running.</span></h3>
-          <p>
-            Hit the ground running (literally) once your trainer lays out your
-            plan.
-          </p>
-        </div>
-  
-        <div>
-          <img src="images/step-4.svg" alt="" />
-          <h3>Step 4:<span>See Results.</span></h3>
-          <p>Bi-weekly checkins with your trainer will keep you focused</p>
-        </div>
-      </section>
-      <!-- Meet the trainers -->
-      <section id="your-trainers" class="trainers">
-        <h2 class="section-title primary-border">Meet the Trainers</h2>
-        <article class="trainer">
-          <img src="images/trainer-1.jpg" alt="Aaron Stephens in his workout" />
-          <div class="trainer-bio text-left">
-            <h3>Aaron Stephens</h3>
-            <h4>Speed / Strength</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos omnis
-              ullam odio eveniet alias earum tenetur accusantium obcaecati vero
-              aut odit laborum, aspernatur ea.
-            </p>
-          </div>
-        </article>
-        <!--  second trainer bio -->
-        <article class="trainer">
-          <div class="trainer-bio text-right">
-            <h3>Joanna Gill</h3>
-            <h4>Endurance</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-              neque animi quo cupiditate commodi saepe culpa sed itaque velit
-              maiores optio dolorem excepturi aperiam dolores, voluptatibus
-              suscipit amet quis repellat!
-            </p>
-          </div>
-          <img
-            src="images/trainer-2.jpg"
-            alt="Joanna Gill cooling off after a workout"
-          />
-        </article>
-  
-        <!-- third trainer bio -->
-        <article class="trainer">
-          <img
-            src="images/trainer-3.jpg"
-            alt="Harry Smith wearing a headband and lifting comically small pink weights"
-          />
-          <div class="trainer-bio text-left">
-            <h3>Harry "the Headband" Smith</h3>
-            <h4>Strength</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-              neque animi quo cupiditate commodi saepe culpa sed itaque velit
-              maiores optio dolorem excepturi aperiam dolores, voluptatibus
-              suscipit amet quis repellat!
-            </p>
-          </div>
-        </article>
-      </section>
-      <!-- Reach out section -->
-      <section id="reach-out" class="contact">
-        <h2 class="section-title secondary-border">Reach Out</h2>
-        <div class="contact-info">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.897549143806!2d-86.8048437844559!3d36.14470771202053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886466a4a6ef8047%3A0xea511455173915d6!2sVanderbilt%20University!5e0!3m2!1sen!2sus!4v1644348355962!5m2!1sen!2sus"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-          <div>
-            <h3>Run Buddy</h3>
-            <p>
-              Any questions or concerns before signing up? <br />
-              Let us know and we'll be happy to talk to you!
-            </p>
-            <address>
-              55 Main Street <br />
-              Some Town, Ca <br />
-              12345 <br />
-              P: 555.RUN.BUDZ (555.786.2839) <br />
-              E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-            </address>
-          </div>
-        </div>
-      </section>
-  
-      <!--  footer -->
-      <footer>
-        <h2>❤️ Made with love by Run Buddy</h2>
-  
-        <div>
-          <a href="privacy-policy.html">Read Our Privacy Policy</a> <br />
-          &copy; 2019 Run Buddy, Inc.
-        </div>
-      </footer>
-    </body>
+        
+        <!-- Portfolio item 02 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 03 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 04 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 05 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 06 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 07 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 08 -->
+        <a href="#" class="portfolio__item">
+            <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 09 -->
+        <a href="#" class="portfolio__item">
+            <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 0 0-->
+        <a href="#" class="portfolio__item">
+            <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+        </a>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <!-- replace with your own email address -->
+    <a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://codepen.io">
+                <i class="fab fa-codepen"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="http://dribbble.com">
+                <i class="fab fa-dribbble"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+</body>
 </html>
