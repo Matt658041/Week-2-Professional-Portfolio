@@ -138,6 +138,8 @@ header a {
   font-weight: bolder;
 }
 header nav {
+  display: flex;
+  flex-wrap: wrap;
   float: right;
   margin-right: 7px 0;
 }
