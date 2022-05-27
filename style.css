@@ -310,7 +310,7 @@ font-size: 1.375rem;
   overflow: hidden;
 }
 .portfolio1 {
-  background-image: url(images/online-reputation-management.jpg);
+  background-image: url(images/Screenshot-for-first-prjt.png);
   background-size: cover;
   background-position: bottom;
   min-height: 250px;
@@ -319,7 +319,7 @@ font-size: 1.375rem;
   
 }
 .portfolio2 {
-  background-image: url(images/search-engine-optimization.jpg);
+  background-image: url(images/Screenshot-for-portfolio.png);
   background-size: cover;
   background-position: bottom;
   min-height: 250px;
@@ -341,9 +341,10 @@ font-size: 1.375rem;
   flex-wrap: wrap;
 }
 .portfolio1 a, .portfolio2 a, .portfolio3 a {
-  color: #10ffff;
+  color: #52c5e1;
   font-size: x-large;
   font-weight: bolder;
+  text-shadow: 2px 2px #0c0c0b;
   
 }
 
